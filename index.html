@@ -47,6 +47,9 @@ li sidebar:hover:not(.active), dropdown-btn:hover {
 
 .nav{
 text-align:center;
+padding-left: 30%;
+padding-top: 30px;
+font-size: large;
 }
 .header {
   background-color: #f1f1f1;
@@ -55,13 +58,13 @@ text-align:center;
 }
 .dropdown-container {
   display: none;
-  color: #000;
+  background-color: #04AA6D;
+  color: white;	
   text-decoration: none;
   padding-left: 24px;
   cursor:pointer;	
 }
 
-/* Optional: Style the caret down icon */
 .fa-caret-down {
   float: right;
   padding-right: 24px;
@@ -73,11 +76,12 @@ text-align:center;
 
 <body>
   <div class="header">
-    <h3>IS 5113.AD1 Data Mining and Data Visualization Assignments by Sasanka Devarapalli (ID: 1513160)</h3>
+    <h3>IS 5113.AD1 Data Mining and Data Visualization: Tableau Assignments by Sasanka Devarapalli (ID: 1513160)</h3>
   </div>
-
+	
   <div class="sidebar">
   <ul>
+   <li><sidebar class="active">Home</sidebar></li>
     <li>
   <sidebar class="active" onclick="window.location='Assignment1/TableauAssignment1.html';">Week 1</sidebar></li>
  
@@ -86,19 +90,20 @@ text-align:center;
     	<i class="fa fa-caret-down"></i>
     </sidebar>
 	  <div class="active dropdown-container">
-	    <a onclick="window.location='Assignment2/MusicSales.html';">Music Sales</a><br>
-	    <a onclick="window.location='Assignment2/FundraisingCalculationAnalysis.html';">Fundraising Calculation Analysis</a><br>
-	    <a onclick="window.location='Assignment2/FoodieTrip.html';">Foodie Trip</a>
+	    <a onclick="window.location='Assignment2/MusicSales.html';">Music Sales Analysis</a><br>
+	    <a onclick="window.location='Assignment2/FundraisingCalculationAnalysis.html';">Fundraising Calculations Analysis</a><br>
+	    <a onclick="window.location='Assignment2/FoodieTrip.html';">Harry's Foodie Trip</a>
 	  </div>
    
-
  </li>
-
-
-
-
  </ul>
 </div>
+
+<div class="nav">
+    NOTE:<br> 1. Click on Week 1 on the navigation bar to view Obesity by state and county dashboard (Aug 22 - Aug 28 week Assignment) <br>
+          2. Click on Week 2 on the navigation bar to view the dropdown consisting of three assignments links. 
+          Click on each link to view the dashboards of respective assignment (Aug 29 - Sept 04 week assignment)
+   </div>
 
 <script>
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
